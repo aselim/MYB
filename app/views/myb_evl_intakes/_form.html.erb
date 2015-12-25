@@ -1,0 +1,37 @@
+<%= form_for(@myb_evl_intake) do |f| %>
+  <% if @myb_evl_intake.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@myb_evl_intake.errors.count, "error") %> prohibited this myb_evl_intake from being saved:</h2>
+
+      <ul>
+      <% @myb_evl_intake.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Solver_id %><br>
+    <%= f.number_field :Solver_id %>
+  </div>
+  <div class="field">
+    <%= f.label :Start_time %><br>
+    <%= f.datetime_select :Start_time %>
+  </div>
+  <div class="field">
+    <%= f.label :Duration_min %><br>
+    <%= f.number_field :Duration_min %>
+  </div>
+  <div class="field">
+    <%= f.label :Result %><br>
+    <%= f.text_field :Result %>
+  </div>
+  <div class="field">
+    <%= f.label :Evl_id %><br>
+    <%= f.text_field :Evl_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

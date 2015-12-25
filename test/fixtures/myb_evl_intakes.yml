@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Solver_id: 1
+  Start_time: 2015-12-23 20:05:24
+  Duration_min: 1
+  Result: 1.5
+  Evl_id: MyString
+
+two:
+  Solver_id: 1
+  Start_time: 2015-12-23 20:05:24
+  Duration_min: 1
+  Result: 1.5
+  Evl_id: MyString

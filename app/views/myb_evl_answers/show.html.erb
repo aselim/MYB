@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Evl:</strong>
+  <%= @myb_evl_answer.Evl_id %>
+</p>
+
+<p>
+  <strong>Question:</strong>
+  <%= @myb_evl_answer.Question_id %>
+</p>
+
+<p>
+  <strong>Answer:</strong>
+  <%= @myb_evl_answer.Answer %>
+</p>
+
+<p>
+  <strong>Intake:</strong>
+  <%= @myb_evl_answer.Intake_id %>
+</p>
+
+<%= link_to 'Edit', edit_myb_evl_answer_path(@myb_evl_answer) %> |
+<%= link_to 'Back', myb_evl_answers_path %>

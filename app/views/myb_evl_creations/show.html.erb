@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @myb_evl_creation.Name %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @myb_evl_creation.Author_id %>
+</p>
+
+<p>
+  <strong>Target user:</strong>
+  <%= @myb_evl_creation.Target_User %>
+</p>
+
+<p>
+  <strong>Serial:</strong>
+  <%= @myb_evl_creation.Serial %>
+</p>
+
+<p>
+  <strong>Schedule:</strong>
+  <%= @myb_evl_creation.Schedule %>
+</p>
+
+<p>
+  <strong>Eval time min:</strong>
+  <%= @myb_evl_creation.Eval_Time_Min %>
+</p>
+
+<%= link_to 'Edit', edit_myb_evl_creation_path(@myb_evl_creation) %> |
+<%= link_to 'Back', myb_evl_creations_path %>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Type: 1
+  Question: MyString
+  Answer: MyString
+  Evl_id: MyString
+  Serial: MyString
+
+two:
+  Type: 1
+  Question: MyString
+  Answer: MyString
+  Evl_id: MyString
+  Serial: MyString

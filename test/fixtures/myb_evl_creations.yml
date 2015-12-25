@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Name: MyString
+  Author_id: 1
+  Target_User: MyString
+  Serial: MyString
+  Schedule: 2015-12-23
+  Eval_Time_Min: 1
+
+two:
+  Name: MyString
+  Author_id: 1
+  Target_User: MyString
+  Serial: MyString
+  Schedule: 2015-12-23
+  Eval_Time_Min: 1

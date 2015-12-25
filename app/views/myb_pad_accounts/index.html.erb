@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Myb Pad Accounts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Username</th>
+      <th>Password</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @myb_pad_accounts.each do |myb_pad_account| %>
+      <tr>
+        <td><%= myb_pad_account.Username %></td>
+        <td><%= myb_pad_account.Password %></td>
+        <td><%= link_to 'Show', myb_pad_account %></td>
+        <td><%= link_to 'Edit', edit_myb_pad_account_path(myb_pad_account) %></td>
+        <td><%= link_to 'Destroy', myb_pad_account, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Myb pad account', new_myb_pad_account_path %>

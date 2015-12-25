@@ -1,0 +1,2 @@
+module MybPadAccountsHelper
+end

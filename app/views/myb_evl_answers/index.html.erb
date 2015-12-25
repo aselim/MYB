@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Myb Evl Answers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Evl</th>
+      <th>Question</th>
+      <th>Answer</th>
+      <th>Intake</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @myb_evl_answers.each do |myb_evl_answer| %>
+      <tr>
+        <td><%= myb_evl_answer.Evl_id %></td>
+        <td><%= myb_evl_answer.Question_id %></td>
+        <td><%= myb_evl_answer.Answer %></td>
+        <td><%= myb_evl_answer.Intake_id %></td>
+        <td><%= link_to 'Show', myb_evl_answer %></td>
+        <td><%= link_to 'Edit', edit_myb_evl_answer_path(myb_evl_answer) %></td>
+        <td><%= link_to 'Destroy', myb_evl_answer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Myb evl answer', new_myb_evl_answer_path %>

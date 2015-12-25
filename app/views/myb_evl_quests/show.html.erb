@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @myb_evl_quest.Type %>
+</p>
+
+<p>
+  <strong>Question:</strong>
+  <%= @myb_evl_quest.Question %>
+</p>
+
+<p>
+  <strong>Answer:</strong>
+  <%= @myb_evl_quest.Answer %>
+</p>
+
+<p>
+  <strong>Evl:</strong>
+  <%= @myb_evl_quest.Evl_id %>
+</p>
+
+<p>
+  <strong>Serial:</strong>
+  <%= @myb_evl_quest.Serial %>
+</p>
+
+<%= link_to 'Edit', edit_myb_evl_quest_path(@myb_evl_quest) %> |
+<%= link_to 'Back', myb_evl_quests_path %>

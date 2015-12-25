@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Username:</strong>
+  <%= @myb_pad_account.Username %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @myb_pad_account.Password %>
+</p>
+
+<%= link_to 'Edit', edit_myb_pad_account_path(@myb_pad_account) %> |
+<%= link_to 'Back', myb_pad_accounts_path %>

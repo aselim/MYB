@@ -1,0 +1,41 @@
+<%= form_for(@myb_evl_creation) do |f| %>
+  <% if @myb_evl_creation.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@myb_evl_creation.errors.count, "error") %> prohibited this myb_evl_creation from being saved:</h2>
+
+      <ul>
+      <% @myb_evl_creation.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Name %><br>
+    <%= f.text_field :Name %>
+  </div>
+  <div class="field">
+    <%= f.label :Author_id %><br>
+    <%= f.number_field :Author_id %>
+  </div>
+  <div class="field">
+    <%= f.label :Target_User %><br>
+    <%= f.text_field :Target_User %>
+  </div>
+  <div class="field">
+    <%= f.label :Serial %><br>
+    <%= f.text_field :Serial %>
+  </div>
+  <div class="field">
+    <%= f.label :Schedule %><br>
+    <%= f.date_select :Schedule %>
+  </div>
+  <div class="field">
+    <%= f.label :Eval_Time_Min %><br>
+    <%= f.number_field :Eval_Time_Min %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
